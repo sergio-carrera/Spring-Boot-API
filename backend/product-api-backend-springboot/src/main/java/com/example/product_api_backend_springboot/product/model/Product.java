@@ -1,5 +1,6 @@
-package com.example.product_api_backend_springboot.Product.model;
+package com.example.product_api_backend_springboot.product.model;
 
+import com.example.product_api_backend_springboot.category.model.Category;
 import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
@@ -14,6 +15,9 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.UUID) //JPA estándar para UUIDs
     @Column(name = "id", length = 36)
     private String id;
+
+    @Column(name = "name")
+    private String name;
 
     @Column(name = "description")
     private String description;

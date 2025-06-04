@@ -1,6 +1,5 @@
-package com.example.product_api_backend_springboot.Product.model;
+package com.example.product_api_backend_springboot.category.model;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
