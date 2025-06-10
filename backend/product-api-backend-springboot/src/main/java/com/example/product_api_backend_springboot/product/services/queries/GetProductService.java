@@ -1,5 +1,6 @@
-package com.example.product_api_backend_springboot.product.services;
+package com.example.product_api_backend_springboot.product.services.queries;
 
+import com.example.product_api_backend_springboot.product.exceptions.ProductNotFoundException;
 import com.example.product_api_backend_springboot.product.model.Product;
 import com.example.product_api_backend_springboot.product.repository.ProductRepository;
 import com.example.product_api_backend_springboot.a_util.Query;
@@ -30,6 +31,6 @@ public class GetProductService implements Query<String, Product> {
             return ResponseEntity.ok(productOptional.get()); //-> Devuelvo el Product y no el ProductDTO
         }
 
-        throw new RuntimeException("Product Not Found"); //-> Próximamente le agregaré una excepción personalizada
+        throw new ProductNotFoundException();
     }
 }

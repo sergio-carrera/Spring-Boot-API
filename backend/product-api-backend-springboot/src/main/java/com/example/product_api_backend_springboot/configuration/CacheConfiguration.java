@@ -1,4 +1,4 @@
-package com.example.product_api_backend_springboot;
+package com.example.product_api_backend_springboot.configuration;
 
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CacheEvict;

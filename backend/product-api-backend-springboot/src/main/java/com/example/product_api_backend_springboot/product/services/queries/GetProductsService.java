@@ -1,4 +1,4 @@
-package com.example.product_api_backend_springboot.product.services;
+package com.example.product_api_backend_springboot.product.services.queries;
 
 import com.example.product_api_backend_springboot.product.model.ProductDTO;
 import com.example.product_api_backend_springboot.product.repository.ProductRepository;

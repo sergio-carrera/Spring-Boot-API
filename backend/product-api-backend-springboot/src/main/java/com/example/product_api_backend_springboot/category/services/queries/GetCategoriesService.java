@@ -1,11 +1,10 @@
-package com.example.product_api_backend_springboot.category.services;
+package com.example.product_api_backend_springboot.category.services.queries;
 
 import com.example.product_api_backend_springboot.category.model.Category;
 import com.example.product_api_backend_springboot.category.repository.CategoryRepository;
 import com.example.product_api_backend_springboot.a_util.Query;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

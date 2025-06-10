@@ -1,7 +1,6 @@
 package com.example.product_api_backend_springboot.category;
 
-import com.example.product_api_backend_springboot.category.model.Category;
-import com.example.product_api_backend_springboot.category.services.GetCategoriesService;
+import com.example.product_api_backend_springboot.category.services.queries.GetCategoriesService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

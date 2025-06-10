@@ -1,4 +1,4 @@
-package com.example.product_api_backend_springboot.product.services;
+package com.example.product_api_backend_springboot.product.services.queries;
 
 import com.example.product_api_backend_springboot.a_util.Query;
 import com.example.product_api_backend_springboot.product.model.GetProductsQuery;
@@ -50,7 +50,7 @@ public class GetProductsBySearchService implements Query<GetProductsQuery, List<
         );
     }
 
-    private Sort defineSort(ProductSortBy productSortBy) {
+    public Sort defineSort(ProductSortBy productSortBy) {
         if (productSortBy == null) {
             return Sort.unsorted();
         }
